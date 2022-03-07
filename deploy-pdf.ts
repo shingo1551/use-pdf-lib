@@ -26,7 +26,7 @@ serve(async (req) => {
     case "POST": {
       const body = await req.formData();
       const text = body.get("text")?.toString();
-      return new Response(await demoPdf(text), {
+      return new Response(await demoPdf(text ? text : undefined), {
         headers: { 'content-type': 'application/pdf' },
       });
     }

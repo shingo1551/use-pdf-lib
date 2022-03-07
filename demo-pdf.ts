@@ -5,7 +5,7 @@ import { demoSVG } from './demo-svg.ts';
 import { demoText } from './demo-text.ts';
 import { demoTiger } from './demo-tiger.ts';
 
-export async function demoPdf(text = 'あいうえお') {
+export async function demoPdf(text = '何か入力して下さい') {
   const pdfDoc = await PDFDocument.create();
   const customFont = await demoFont(pdfDoc);
 
