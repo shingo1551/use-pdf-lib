@@ -16,4 +16,4 @@ demoText(customFont, page);
 const pdfBytes = await pdfDoc.save();
 await Deno.writeFile('out.pdf', pdfBytes);
 
-// deno run --allow-read --allow-write --allow-net custom-font.ts
+// deno run --allow-read --allow-write --allow-net deno-pdf.ts
