@@ -35,5 +35,3 @@ serve(async (req) => {
       return new Response("Invalid method", { status: 405 });
   }
 });
-
-// deno run --allow-net=:8000  --allow-read --watch deploy-pdf.ts 
