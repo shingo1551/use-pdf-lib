@@ -13,7 +13,6 @@ console.log('Listening on http://localhost:8000');
 serve(async (req) => {
   switch (req.method) {
     case "GET": {
-
       return new Response(html, {
         headers: { "content-type": "text/html; charset=utf-8" },
       });
